@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Ivy Grace</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="humburger-nav">
+        <div class="logo">Ivy Grace</div>
+        <div class="humburger-menu">
+            <div class="humburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        <div class="menu-links"></div>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/about_pic.png" alt="Ivy Grace profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Ivy Grace</h1>
+            <p class="section_text_p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ivy_Grace_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My Linkedin Profile" class="icon" 
+                onclick="location.href='https://www.linkedin.com'">
+
+                <img src="./assets/github.png" 
+                alt="My Github Profile" class="icon" 
+                onclick="location.href='https://github.com/IvyGraceMapalad'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about"> <br>
+        <p class="section_text_p1">Get To know More</p>
+        <h1 class="title">About Me</h1> <br> <br> <br> <br> <br> <br> <br>
+        <div class="section-container">
+            <div class="section_pic_container">
+                <img src="./assets/about.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p1>Capstone Project <br>Back-end Developer</p1> <br>2022-2024
+                </div>
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p2>Freelance <br> Video Editor </p2><br>2021-2022
+                </div>
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p2>Student Body Organization <br> Associate PRO, Auditor </p2><br>2022-20224
+                </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor Of Science in Information Technology <br>Bukidnon State University</p>
+                        <p>2020-2024</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am Ivy Grace Magallanes. Mapalad and I am ready to utilize my
+                        skills and passion to further the mission and vision of the company.
+                        Bringing forth the positive attitude, the willingness and motivation to
+                        learn new things beyond my knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1> <br> <br> <br> <br> <br>
+        <div class="experince-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experince-sub-title">Frontened Development</h2> <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>BOOTSTRAP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>     
+                </div>
+                <div class="details-container">
+                    <h2 class="experince-sub-title">Backend Development</h2> <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experince icon" 
+                            class="icon">
+                            <div>
+                                <h3>Laravel</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+            </div>
+            <div class="details-containers">
+                <h2 class="experince-sub-title">Leadership</h2><br>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experince icon" 
+                        class="icon">
+                        <div>
+                            <h3>ASSOCIATE PRO</h3>
+                            <p>Student Body Organization</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experince icon" 
+                        class="icon">
+                        <div>
+                            <h3>AUDITOR</h3>
+                            <p>Student Body Organization</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experince icon" 
+                        class="icon">
+                        <div>
+                            <h3>VOLUNTEER</h3>
+                            <p>Bethlehem Apostolate</p>
+                        </div>
+                    </article>
+                </div> 
+        </div>
+        <div class="details-containers">
+            <h2 class="experince-sub-title">Others</h2><br>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="experince icon" 
+                    class="icon">
+                    <div>
+                        <h3>CAPSTONE PROJECT</h3>
+                        <p>School Project</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="experince icon" 
+                    class="icon">
+                    <div>
+                        <h3>FREELANCE</h3>
+                        <p>Video Editor</p>
+                    </div>
+                </article>
+                <!-- <article>
+                    <img src="./assets/checkmark.png" alt="experince icon" 
+                    class="icon">
+                    <div>
+                        <h3>VOLUNTEER</h3>
+                        <p>Bethlehem Apostolate</p>
+                    </div>
+                </article> -->
+            </div> 
+        </div>  
+               
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'">    
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse my</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project1.png" 
+                    alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Video Editing</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://drive.google.com/file/d/17jt4IV0IOJo2fOvbtGW-C76ie9tdITzN/view?usp=sharing'">
+                    VIEW</button>
+                    <!-- <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://drive.google.com/drive/folders/1pYb3ERgxj1zQPYwGQ2aL0_PrWQPBcjFm?usp=sharing'">
+                    LIVE DEMO</button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project2.png" 
+                    alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Capstone Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.facebook.com/photo/?fbid=273526478995204&set=pcb.273526988995153&__cft__[0]=AZUowAhqty0ibLgQ74zIiLzIsxtCMb9gLkXyL9tO6aE8qqqeE_zau1wacvI0_URPU9Q4q8WMhbRenUIsHYP82HUHkuxwzrJ3hGv-j67FUUuF3aWPeDvuMNOUeLNQNIdnTcfeSbbWtjlseXGv0vM2UxUH70QB65teCD4JpdToyfmVrkxg-HebQ9_Pu_gBZL_Yro8&__tn__=*bH-R' ">
+                    VIEW</button>
+                    <!-- <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/IvyGraceMapalad'">
+                    LIVE DEMO</button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project3.png" 
+                    alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Github</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/IvyGraceMapalad'">
+                    VIEW</button>
+                    <!-- <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://Wordpress.com'">
+                    LIVE DEMO</button> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#certificates'">   
+    </section>  
+
+    <section id="certificates">
+        <p class="section_text_p1">Take a look in my</p>
+        <h1 class="title">Certificates</h1><br><br><br><br><br><br>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/certificates.jpg" alt="experience icon" class="icon-cert">
+                    <h3>Microsoft Excel Beginner to Advanced w/ Data Analysis 101</h3>
+                    <p>Udemy</p>2024
+            </div>
+            <div class="details-container">
+                <img src="./assets/certificates.jpg" alt="experience icon" class="icon-cert">
+                <h3>Wadhani Core Employability Skills</h3>
+                <p>Wadhani Foundation</p>2023
+            </div>
+            <div class="details-container">
+                <img src="./assets/certificates.jpg" alt="experience icon" class="icon-cert">
+                <h3>HTML & CSS Certification Course for Beginners</h3>
+                <p>Udemy</p>2021
+            </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" 
+    alt="Arrow icon" class="icon arrow" 
+    onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" 
+                class="icon contact-icon email-icon">
+                <p <a href="mailto:examplemail@gmail.com">
+                </a>ivygracemapalad2304@gmail.com</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/fb.png" alt="linkedin icon" 
+                class="icon contact-icon">
+                <p <a href="https://www.facebook.com/ivygracemapalad2304">
+                </a>Facebook</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ivy Grace Magallanes Mapalad    .All Rights Received.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
